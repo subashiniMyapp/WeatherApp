@@ -3,17 +3,25 @@
 :root {
     /* Colors */ 
     --orange-color: rgb(246, 99, 53);
-    --dark-color:rgb(27, 31, 41);
+    --dark-color:rgb(230, 233, 240);
     --border: rgba(207, 24, 24, 0.25);
     --background: rgba(136, 188, 216, 0.1);
     --box_shadow: rgba(3, 46, 87, 0.3);
 }
 html{
     font-size: 10px;
+    color: var(--dark-color);
 }
 
-body {
-    background: url(https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?w=2000
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.maindiv {
+    background: url(https://img.freepik.com/free-photo/aerial-shot-colorful-autumn-forest_181624-41105.jpg?w=740&t=st=1691571987~exp=1691572587~hmac=2a8388dee82a213f7b6a91a5eca19d3da3cb249985c6f9ffbe9a559629b41208
     );
     background-position: center;
     background-size: cover;
@@ -23,13 +31,6 @@ body {
     align-items: center;
     justify-content: center;
     
-}
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 .container{
     width: auto;

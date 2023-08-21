@@ -1,8 +1,9 @@
 // import { useState } from "react";
 import ReactDOM from "react-dom/client";
 // import Gallery from "./gallery";
-import "./index.css";
-import WeatherComponet from "./form";
+// import "./index.css";
+// import WeatherComponet from "./form";
+import RecipeSearch from "./RecipeApp";
 // import { Users } from "./gallery";
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import Home from "./pages/Home";
@@ -87,7 +88,5 @@ import WeatherComponet from "./form";
 //     </>
 //   );
 // }
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <WeatherComponet />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<RecipeSearch />);
 // root.render(<App />);

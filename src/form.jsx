@@ -44,10 +44,10 @@ const WeatherComponet = ()=>{
       }
     }
     return (
-      <body>
+      <div className='maindiv'> 
 
         <div className='container'>
-            <h3>World Wide Weather info App</h3>
+            <h2>World Wide Weather info App</h2>
             <div className='serch_box'>
                   <input
                   type="text"
@@ -83,7 +83,10 @@ const WeatherComponet = ()=>{
                       )}
                 
             </div>
-      </body>
+      </div>
       );
 }
 export default WeatherComponet;
+
+
+// 8551ce3abaf1480196a7613602663736
