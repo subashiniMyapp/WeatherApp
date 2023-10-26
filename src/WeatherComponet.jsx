@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import axios from 'axios';
+import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faSun, faCloud } from '@fortawesome/fontawesome-free-solid'
 
