@@ -58,11 +58,15 @@ function Moviesapp() {
       }
     },[search])
 
+    const [model,setModol] = useState(false);
+    const [tempdata,setTempData] = useState([]);
     
 
       const getData = (img,title,rating,lan,overview) => {
         let tempData = [img,title,rating,lan,overview];
-        console.log(tempData);
+        // console.log(tempData);
+        setTempData(item=>[...tempData]);
+        return setModol(true);
       };
 
   return (
@@ -87,7 +91,6 @@ function Moviesapp() {
                     onClick={()=>getData(Imagpath+movie.poster_path,movie.title,movie.vote_average,movie.original_language,movie.overview) }> 
                        <img src={Imagpath+movie.poster_path} alt="Movie Poster" className="movie-poster" />
                         <h2 className="movie-title">{movie.title}</h2>
-                        <h2 className="movie-rating">{movie.vote_average}</h2>
                     </div>
 
               ))}
@@ -95,7 +98,10 @@ function Moviesapp() {
               )
 
           }
-        <Modal/>
+          {
+             model === true ? <Modal img={tempdata[0]} title={tempdata[1]} rating={tempdata[2]} lan={tempdata[3]} overview={tempdata[4]} hide={()=>setModol(false)} />:""
+          }
+      
       </>
       <div className="footer">
         &copy; 2023 Movie Search App
