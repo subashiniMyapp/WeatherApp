@@ -39,7 +39,7 @@ body {
 }
 
 input[type="text"] {
-  border: none;
+  /* border: none; */
   padding: 10px;
   width: 100%;
   font-size: 1rem;

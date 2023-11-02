@@ -19,7 +19,7 @@ export default class Modal extends Component{
                             <button type="button" className="btn-close" onClick={this.props.hide}></button>
                         </div>
                         <div className="modal-body">
-                            <h5 class="card-title">Rating : {this.props.rating} / Origin : {this.props.lan}</h5>
+                            <h5 className="card-title">Rating : {this.props.rating} / Origin : {this.props.lan}</h5>
                             <img src={this.props.img} className="img-fluid" alt="newimag"/>
                             <h5 className="modal-title">Moive Overview :</h5>
                             <p>{this.props.overview}</p>
